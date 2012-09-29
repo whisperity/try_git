@@ -1,0 +1,3 @@
+[submodule "php-net-tutorial"]
+	path = php-net-tutorial
+	url = https://github.com/PeeHaa/php-net-tutorial.git
