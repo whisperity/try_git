@@ -31,3 +31,7 @@ Lowering the semi-professional tone:
 This is a **test** repository. Good luck out there, buddy!
 
 > And have fun with Git!
+
+### Branch information
+
+This is the master branch of the repository.
