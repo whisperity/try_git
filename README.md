@@ -31,3 +31,15 @@ Lowering the semi-professional tone:
 This is a **test** repository. Good luck out there, buddy!
 
 > And have fun with Git!
+
+### Branch information
+
+This is a branch for trying out pull requests.
+
+Some changes were made:
+* The whole repository is cleaned up.
+* Example submodule deleted.
+
+Until this point, it could be an easy _fast-forward_ merge. **But!**
+Because of this `README.md` having been edited in both sides of the
+merge, it should result in a conflict. We shall see... 
