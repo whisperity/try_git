@@ -1,14 +1,17 @@
 <?php
 
 /**
- * Example exception to be used in the test.
+ * This example exception is thrown if the key for Sample is invalid.
  */
 class InvalidKeyException extends Exception {
-	// noope
+	// Do nothing. We all have everything we want, inherited from Exception.
 }
 
+/**
+ * Thrown if a key already exists. (Hurr... why do I even documentate this?)
+ */
 class KeyAlreadyExistsException extends Exception {
-	// nope.php
+	// Do nothing here either.
 }
 
 /**
@@ -77,6 +80,8 @@ class Sample {
 class SampleTest extends PHPUnit_Framework_TestCase {
 
 	/**
+     * Test whether updating a nonexistant value throws the demanded Exception.
+     * 
 	 * @expectedException InvalidKeyException
      * @covers Sample::update_attribute
 	 */
@@ -86,6 +91,8 @@ class SampleTest extends PHPUnit_Framework_TestCase {
 	}
 
 	/**
+     * Test whether attribute creation is successful.
+     * 
 	 * @covers Sample::create_attribute
 	 */
 	public function testAttributeCreation() {
@@ -94,6 +101,9 @@ class SampleTest extends PHPUnit_Framework_TestCase {
 	}
 
 	/**
+     * Test whether trying to create an already existing attribute throws
+     * the demanded Exception.
+     * 
 	 * @expectedException KeyAlreadyExistsException
      * @covers Sample::create_attribute
      * @covers Sample::update_attribute
@@ -107,6 +117,8 @@ class SampleTest extends PHPUnit_Framework_TestCase {
 	}
     
     /**
+     * Test the thrown Exception on attempt to access undefined key.
+     * 
      * @expectedException InvalidKeyException
      * @covers Sample::get_value
      */
@@ -116,6 +128,8 @@ class SampleTest extends PHPUnit_Framework_TestCase {
     }
     
     /**
+     * Test whether creating an attributes creates it with the proper default value.
+     * 
      * @covers Sample::get_value
      */
     public function testAttributeRetrievalDefault() {
@@ -128,6 +142,8 @@ class SampleTest extends PHPUnit_Framework_TestCase {
     }
     
     /**
+     * Test whether attribute setting and retrieving works as expected.
+     * 
      * @covers Sample::get_value
      */
     public function testAttributeRetrieval() {
