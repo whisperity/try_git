@@ -1,0 +1,14 @@
+language: php
+
+script: phpunit test
+
+php:
+  - 5.4
+
+# whitelist
+branches:
+  only:
+    - master
+
+notifications:
+  email: false
