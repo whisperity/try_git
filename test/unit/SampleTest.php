@@ -134,9 +134,10 @@ class SampleTest extends PHPUnit_Framework_TestCase {
      */
     public function testAttributeRetrievalDefault() {
         $sample = new Sample();
+        $sample->create_attribute("test");
         
         $expected = "";
-        $value = $sample->create_attribute("test");
+        $value = $sample->get_value("test");
         
         $this->assertEquals($expected, $value);
     }
