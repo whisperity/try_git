@@ -1,6 +1,8 @@
-In this repository, we
 try_git
 =======
+
+[![Travis-CI build
+status](https://travis-ci.org/whisperity/try_git.png?branch=master)](https://travis-ci.org/whisperity/try_git)
 
 NAME
 ----
