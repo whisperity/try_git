@@ -1,1 +1,2 @@
-This is a some sort of file. It contains a thing.
+This is a "Somefile". It now contains a thing and some other information from a pull request by another great collaborator.
+The pull request was merged with a rebased commit, because we had to resolve a conflict.
